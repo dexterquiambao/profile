@@ -1,52 +1,198 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/e3f10475a8.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My Profile</title>
-     </head>
+  <head>
+        <meta charset='utf-8'>
+ <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <body>
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 
+
+    <title>My Profile</title>
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <div class="card-white" id="introduction">
-          <h1>Hi, my name is Dexter</h1>
-            <br>
-           <h2>Future Fullstack Developer</h2>
-            <img id ="avatar" src="images/dexter.jpg" alt="Picture of Dexter">
-           <h2>About Me</h2>
-              <p>My previous role was for a tech startup company called TaskRabbit and I was part of the team that helped during the UK and European expansion phase working as a Fulfillment Coordinator. I started learning to code, originally, to build websites on the front end and generally because I find it interesting.</p>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Dexter Quiambao</a>
         </div>
-      </div>
-
-      <div class="container">
-        <div class="card-white" id="about-me">
-          <h2 id = "contact">Contact</h2>
-            <ol class="social-icons">
-              <p><i class="fa fa-map-marker"></i> W10,London</p>
-              <p><i class="fa fa-phone"></i> 07845714574</p>
-              <p><i class="fa fa-envelope"></i> dexterquiambao@googlemail.com</p>
-              <p><i class="fa fa-globe"></i><a href="#"> Discover Le Wagon</a></p>
-            </ol>
-        </div>
-      </div>
-
-      <footer>
-        <div class="container">
-                    <ul class="social-links">
-            <li><i href="#" class="fab fa-facebook" id="logo-facebook"></i></li>
-            <li><i href="#" class="fab fa-google-plus" id="logo-google"></i></li>
-            <li><i href="#" class="fab fa-instagram" id="logo-instagram"></i></li>
-           <li><i href="#" class="fab fa-github" id="logo-github"></i></li>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="nav-about"><a href="#about">01 .About</a></li>
+            <li id="nav-portfolio"><a href="#portfolio">02. Portfolio</a></li>
+            <li id="nav-contact"><a href="#contact">03. Contact</a></li>
           </ul>
-        </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-        <p>Copyright &copy; 2020 by Dexter Q. All rights reserved</p>
-      </footer>
-    </body>
+    <!-- Begin page content -->
+    <div class="container-fluid">
+
+      <div class="row cover top">
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-xs-12 headline">
+              <h1 class="text-center">Hi, I'm Dexter</h1>
+              <p class="lead text-center">A Web Developer in training.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 center-block text-center">
+              <a href="#about"><span id="scrollIcon" class="front-glyph glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="about" class="row cover">
+        <h2 class="text-center">01. About Me</h2>
+        <div class="row">
+          <div class="col-md-6 text-center about-info">
+            <img class="img-circle text-center profile-img" src="resources/img/dexter.png">
+            <p class="text-center">I recently graduated from the LeWagon Coding Developer Bootcamp towards the end of 2020, batch #474. Progressing through the course as a Full Stack Developer, I am currently focussing my efforts towards products that provide pixel-perfect, user-friendly experiences and then transition to the back end side to build fully fledged, working apps again.</p>
+
+            <p>My goal from here is to create fun projects that utilize my Full Stack Developer knowledge but with a heavier focus towards the aesthetics. </p>
+          </div>
+          <div class="col-md-6 about-tools">
+            <p class="text-center">Here are some of the few technologies I worked with during my time at Le Wagon:</p>
+              <div class="col-xs-6">
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>AJAX</li>
+                </ul>
+              </div>
+              <div class="col-xs-6">
+                <ul>
+                  <li>Ruby on Rails</li>
+                  <li>Ruby</li>
+                  <li>Git</li>
+                  <li>Heroku</li>
+                </ul>
+              </div>
+
+          </div>
+          <div class="row break">
+            <div class="col-md-6 about-last">
+              <p class="text-center">Check out my latest projects <span class="glyphicon glyphicon-arrow-down"></span></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- End #About -->
+
+      <div id="portfolio" class="row cover">
+        <h2 class="text-center">02. Portfolio</h2>
+        <div class="container">
+          <div class="row portfolio-projects"> <!-- Two project row-->
+            <div class="col-lg-6"> <!--1st side project -->
+              <div class="row">
+                <div class="col-sm-5 text-center">
+                  <a target="blank" href="https://www.yellow-ticket.com/"><h4 class="portfolio-projects--title">Yellow Ticket</h4></a>
+                  <p class="portfolio-projects--desc">Reducing food wastage whilst helping local communities</p>
+                  <p class="portfolio-projects--desc uses">Uses: Ruby, SCSS, JavaScript</p>
+                  <!-- <a class="btn btn-rounded portfolio-projects--btn" target="_blank" href="https://www.yellow-ticket.com/" role="button">View Project</a> -->
+                  <a target="blank" href="https://github.com/kurtmcdonald/yellowticket"><i style="font-size: 25px; padding: 5px;" class="lni lni-github-original"></i></a>
+                </div>
+                <div class="col-sm-7 text-center">
+                  <a target="blank" href="https://www.yellow-ticket.com/"><img class="portfolio-projects--image" src="resources/img/yellow-ticket.png"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6"> <!--2nd side project -->
+              <div class="row">
+                <div class="col-sm-5 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <a target="blank" href="https://heirbnb-alfiehiscox.herokuapp.com/"><h4 class="portfolio-projects--title">HeirBnb</h4></a>
+                  <p class="portfolio-projects--desc">Airbnb clone as our first group project at Le Wagon</p>
+                  <p class="portfolio-projects--desc uses">Uses: Ruby on Rails, SCSS, APIs</p>
+                  <!-- <a class="btn btn-rounded portfolio-projects--btn" target="_blank" href="https://heirbnb-alfiehiscox.herokuapp.com/" role="button">View Project</a> -->
+                  <a target="blank" href="https://github.com/alfiehiscox/HeirBnB"><i style="font-size: 25px; padding: 5px;" class="lni lni-github-original"></i></a>
+                </div>
+                <div class="col-sm-7 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <a target="blank" href="https://heirbnb-alfiehiscox.herokuapp.com/"><img class="img-rounded portfolio-projects--image" src="resources/img/heirbnb.png"></a>
+                </div>
+              </div>
+            </div>
+          </div><!--end Two project row-->
+
+          <div class="row portfolio-projects"> <!-- Opposite Two project row-->
+            <div class="col-lg-6"> <!--1st side project -->
+              <div class="row">
+                <div class="col-sm-5 text-center">
+                  <a target="blank" href="https://github.com/dexterquiambao/OmniFood"><h4 class="portfolio-projects--title">OmniFood</h4></a>
+                  <p class="portfolio-projects--desc">Udemy tutorial follow along for a premium food delivery service.</p>
+                  <p class="portfolio-projects--desc uses">Uses: Javascript, HTML, CSS</p>
+                  <!-- <a class="btn btn-rounded portfolio-projects--btn" href="https://github.com/dexterquiambao/OmniFood" role="button">View Project</a> -->
+                  <a target="blank" href="https://github.com/dexterquiambao/OmniFood"><i style="font-size: 25px; padding: 5px;" class="lni lni-github-original"></i></a>
+                </div>
+                <div class="col-sm-7 text-center">
+                  <a target="blank" href="https://github.com/dexterquiambao/OmniFood"><img class="img-rounded portfolio-projects--image" src="resources/img/omnifood.png"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6"> <!--2nd side project -->
+              <div class="row">
+                <div class="col-sm-5 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <a target="blank" href="https://github.com/dexterquiambao/rails-mister-cocktail"><h4 class="portfolio-projects--title">Mister Cocktail</h4></a>
+                  <p class="portfolio-projects--desc">Mixing drinks and taking tabs! - Under Construction...</p>
+                  <p class="portfolio-projects--desc uses">Uses: Ruby, JavaScript, HTML</p>
+                  <!-- <a class="btn btn-rounded portfolio-projects--btn" href="https://github.com/dexterquiambao/rails-mister-cocktail" role="button">View Project</a> -->
+                  <a target="blank" href="https://github.com/dexterquiambao/rails-mister-cocktail"><i style="font-size: 25px; padding: 5px; margin-left: 10px;" class="lni lni-github-original"></i></a>
+                </div>
+                <div class="col-sm-7 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <a target="blank" href="https://github.com/dexterquiambao/rails-mister-cocktail"><img class="portfolio-projects--image" src="resources/img/mister-cocktail.png"></a>
+                </div>
+              </div>
+            </div>
+          </div><!--end Opposite Two project row-->
+
+        </div>
+        </div>
+      </div><!-- End #Portfolio -->
+
+      <div id="contact" class="row cover bottom">
+        <h2 class="text-center contact-header">03. Contact Me</h2>
+        <p class="text-center contact-email">Get in touch with me&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;&nbsp;&nbsp;dexterquiambao@gmail.com</p>
+        <div class="text-center contact-social-icons">
+          <p>Or find me on:</p>
+          <ul class="centered">
+            <a target="blank" href="https://www.linkedin.com/in/dexter-quiambao"><li><i class="lni lni-linkedin-original"></i> LinkedIn</li></a>
+            <a target="blank" href="https://github.com/dexterquiambao"><li><i class="lni lni-github-original"></i> Github</li></a>
+          </ul>
+        </p>
+
+      </div><!-- End #Contact -->
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+      </div>
+    </footer>
+    <!-- Latest compiled and minified CSS -->
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="resources/js/script.js"></script>
+
+
+  </body>
+
 </html>
